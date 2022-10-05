@@ -287,6 +287,32 @@ int main()
 
 // 8. Program to convert a positive number into a negative number and negative number into a positive number using a switch statement.
 
+#include<stdio.h>
+int main()
+{
+    int ch,n;
+    printf("\nEnter your choice :\n");
+    printf("\n1. Convert positive number into negative number :\n");
+    printf("\n2. Convert negative number into positive number :\n");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1: 
+                printf("Enter positve number :");
+                scanf("%d",&n);
+                printf("Positive number %d is converted into Negative number %d",n,-n);
+                break;
+        case 2: 
+                printf("Enter negative number :");
+                scanf("%d",&n);
+                printf("Negative number %d is converted into Positive number %d",n,-n);
+                break;
+        default:printf("Invalid choice");
+
+    }
+    return 0;
+}
+
 // 9. Program to Convert even number into its upper nearest odd number Switch Statement.
 
 #include <stdio.h>
