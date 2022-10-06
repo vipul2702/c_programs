@@ -15,6 +15,21 @@ int main()
 
 // 02) WAP to check whether a given number is divisible by 5 or not.
 
+#include<stdio.h>
+int main()
+{
+    int x,rem=0;
+    printf("Enter a number :");
+    scanf("%d",&x);
+
+    rem = x%10;
+    if(rem==5 || rem==0)
+        printf("x = %d is Divisible by 5",x);
+    else 
+        printf("x = %d is not Divisible by 5",x);
+    return 0;
+}
+
 // 03) WAP to check whether a given number is an even or an odd number.
 
 #include <stdio.h>
@@ -108,6 +123,26 @@ int main()
 
 // 10) WAP which takes the cost price and selling price of a product from user. Now calculate and print profit or loss percentage.
 
+#include<stdio.h>
+int main()
+{
+    float sp,cp,p,l;
+    printf("Enter selling price and cost price of prouct :");
+    scanf("%f%f",&sp,&cp);
+
+    if((sp-cp)>0)
+    {
+        p = ((sp-cp)*100)/cp;
+        printf("Profit percentage is %f",p);
+    }
+    else 
+    {
+        l = ((cp-sp)*100)/cp;
+        printf("Loss percentage is %f",l);
+    }
+    return 0;
+}
+
 // 11) WAP to take marks of 5 subjects from the user. Assume marks are given out of 100 and passing marks is 33. Now display whether the candidate passed the examination or failed.
 
 #include <stdio.h>
@@ -144,6 +179,21 @@ int main()
 
 // 15) WAP to check whether a given number is positive, negative or zero.
 
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("Enter a number :");
+    scanf("%d",&x);
+    if(x>0)
+        printf("Positive");
+    else if(x<0)
+            printf("Negative");
+    else
+        printf("Zero");
+    return 0;
+}
+
 // 16) WAP to check whether a given character is an alphabet(Upper case), an alphabet(lower case), a digit or a special character.
 
 #include <stdio.h>
@@ -179,3 +229,18 @@ int main()
 }
 
 // 18) WAP which takes the month number as an input and display number of days in that month.
+
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("Enter a month number from 1 to 12 :");
+    scanf("%d",&x);
+    if(x==1||x==3||x==5||x==7||x==8||x==10||x==12)
+        printf("Number of days in month %d is 31",x);
+    else if(x==4||x==6||x==9||x==11)
+            printf("Number of days in month %d is 30",x);
+    else
+        printf("Number of days in month %d is 28 or 29",x);
+    return 0;
+}
