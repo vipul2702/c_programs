@@ -47,6 +47,19 @@ int main()
 
 // 04) WAP to check whether a given number is and even number or an odd numbers without using % operator.
 
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("Enter a number :");
+    scanf("%d",&x);
+    if((x&1)==0)
+        printf("Even number");
+    else
+        printf("Odd number");
+    return 0;
+}
+
 // 05) WAP to check whether a given number is three digit or not.
 
 #include <stdio.h>
@@ -120,6 +133,21 @@ int main()
 }
 
 // 09) WAP to find the greatest among three given numbers. Print number once if the greatest number appears two or three times.
+
+ #include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers :");
+    scanf("%d%d%d",&a,&b,&c);
+    if((a>b)&&(a>c))
+        printf("a=%d is greatest",a);
+    else if(b>c)
+            printf("b=%d is greatest",b);
+        else
+            printf("c=%d is greatest",c);
+    return 0;
+}
 
 // 10) WAP which takes the cost price and selling price of a product from user. Now calculate and print profit or loss percentage.
 
