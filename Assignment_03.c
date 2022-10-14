@@ -203,7 +203,33 @@ int main()
 
 // 13) WAP to check whether a given number is divisible by 3 and divisible by 2.
 
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("Enter a number :");
+    scanf("%d",&x);
+    if(x%3==0 && x%2==0)
+        printf("Number x=%d is divisible by both 2 and 3",x);
+    else
+        printf("Not divisible");
+    return 0;
+}
+
 // 14) WAP to check whether a given number is divisible by 7 or divisible by 3.
+
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("Enter a number :");
+    scanf("%d",&x);
+    if(x%7==0 || x%3==0)
+        printf("Number x=%d is divisible by either 7 or 3",x);
+    else
+        printf("Not divisible");
+    return 0;
+}
 
 // 15) WAP to check whether a given number is positive, negative or zero.
 
